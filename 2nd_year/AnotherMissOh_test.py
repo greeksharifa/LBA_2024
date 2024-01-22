@@ -147,7 +147,7 @@ def main(args):
 	count_unanswerable = 0
 	return
 	for i in range(len(test_questions)):
-		test_question = test_questions[i]['que'] # TODO: 디버깅을 위해 첫번째 question만 가져오도록 설정
+		test_question = test_questions[i]['que']
 		test_qid = test_questions[i]['qid']
 		test_vid = test_questions[i]['vid']
 
