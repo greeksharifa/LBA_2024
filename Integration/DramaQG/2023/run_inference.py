@@ -4,6 +4,7 @@ from tqdm import tqdm
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
+import json
 
 from transformers import Blip2Processor, Blip2ForConditionalGeneration
 from dataset import ImageTextGenerationDataset
@@ -72,6 +73,7 @@ def add_args(parser):
     parser.add_argument("--image_dir", type=str, required=True)
     parser.add_argument("--prompt_type", default='0', choices=['0', '1', '2'])
     parser.add_argument("--decoding_strategy",default='beam', choices=['greedy', 'beam', 'constrastive', 'diverse', 'sample'])
+    parser.add_argument("--output_path", type=str, default="../../Integration-Outputs/output_KHU.json")
     
     return parser
 
@@ -80,34 +82,39 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser = add_args(parser)
-    
+
     args = parser.parse_args()
-    
-    model = get_model(args)
     processor = get_processor(args)
     
-    # unanswerable question and uncertain_information(object)
-    samples = [
-        {"question" : "Why did Dokyung go to the old man?",
-         "uncertain_information" : [{"['old','man']" : False}],
-         "vid" : "AnotherMissOh17_001_0000"
-        },
-    ]
-    
-    examples = convert_inputs_to_examples(samples)
+    with open('../../Integration-Outputs/output_KAIST.json', 'r') as f:
+        loaded_json = json.load(f)
+    examples = convert_inputs_to_examples(loaded_json)
     
     test_dataset = ImageTextGenerationDataset(args, examples, processor)
     test_dataloader = DataLoader(test_dataset, shuffle=False, batch_size=1, collate_fn=test_dataset.collate_fn)
     
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
+    model = get_model(args)
     model.to(device)
     model.eval()
 
-    generated_results = []
+    generated_questions = []
+    results = []
+    example_qid = examples[0]['qid']
     
-    for batch in tqdm(test_dataloader):
-        
+    for i, batch in enumerate(tqdm(test_dataloader)):
+        if example_qid != examples[i]['qid']:
+            output = {  
+                    'qid': examples[i-1]['qid'],
+                    'vid': examples[i-1]['vid'],
+                    'main_question': examples[i-1]['question'],
+                    'sub_questions': generated_questions,
+                }
+            results.append(output)
+            generated_questions = []
+        example_qid = examples[i]['qid']
+
         inputs = move_to(batch, device)
         
         outputs = []
@@ -118,9 +125,9 @@ def main():
         
         additional_questions = processor.batch_decode(outputs, skip_special_tokens=True)
         
-        generated_results += additional_questions
+        generated_questions += additional_questions
         
-    print(generated_results)
+    json.dump(results, open(args.output_path, 'w'), indent=4)
     
 if __name__ == "__main__":
     

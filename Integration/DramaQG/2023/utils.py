@@ -5,7 +5,6 @@ import ast
 import numpy as np
 from tqdm import tqdm
 
-
 def set_random_seed(seed):
     torch.manual_seed(seed)
     torch.backends.cudnn.deterministic = True
@@ -15,7 +14,6 @@ def set_random_seed(seed):
     torch.cuda.manual_seed(seed)
 
 def get_info_from_vid(vid):
-
     episode_id = vid[13:15]
     scene_id = vid[16:19]
     shot_id = vid[20:]
@@ -91,11 +89,12 @@ def convert_inputs_to_examples(inputs_list):
     
     examples = []
     for inputs in inputs_list:
-        ambiguous_objects = get_object_name_from_inputs(inputs['uncertain_information'])
+        ambiguous_objects = get_object_name_from_inputs(inputs['prediction'])
         for object_name in ambiguous_objects:
             example = {}
             example['ambiguous_object'] = object_name
             example['vid'] = inputs['vid']
+            example['qid'] = inputs['qid']
             example['question'] = inputs['question']
             examples.append(example)
     
