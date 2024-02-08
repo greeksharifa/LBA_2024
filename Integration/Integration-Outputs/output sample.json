@@ -1,0 +1,72 @@
+# output_KAIST.json
+[
+    {
+        "qid": 3205,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "How is the relationship between Haeyoung1 and Dokyung when the two hug and kiss each other?",
+        "answerability": [
+            "unanswerable"
+        ],
+        "prediction": [
+            {
+                "['relationship']": false
+            }
+        ]
+    },
+    ...
+]
+
+# output_KHU.json = generated sub Qs
+[
+    {
+        "qid": 3205,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "How is the relationship between Haeyoung1 and Dokyung when the two hug and kiss each other?",
+        "sub_questions": [
+            "1",
+            "2",
+            "3",
+        ]
+    },
+    ...
+]
+
+# output_SNU_1.json = generated sub As
+[
+    {
+        "qid": 3205,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "How is the relationship between Haeyoung1 and Dokyung when the two hug and kiss each other?",
+        "sub_Qs": [
+            "1",
+            "2",
+            "3",
+        ],
+        "sub_As": [
+            "1",
+            "2",
+            "3",
+        ]
+    },
+    ...
+]
+
+
+
+------
+
+{
+    3205: {
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "How is the relationship between Haeyoung1 and Dokyung when the two hug and kiss each other?",
+        "answerability": [
+            "unanswerable"
+        ],
+        "prediction": [
+            {
+                "['relationship']": false
+            }
+        ]
+    },
+    ...
+}

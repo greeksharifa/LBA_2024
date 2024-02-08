@@ -1,0 +1,116 @@
+[
+    {
+        "qid": 3205,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "How is the relationship between Haeyoung1 and Dokyung when the two hug and kiss each other?",
+        "sub_questions": [
+            "What is the relationship between Haeyoung1 and Dokyung when the two hug and kiss"
+        ],
+        "sub_answers": [
+            "in the image? romantic relationship"
+        ]
+    },
+    {
+        "qid": 3200,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "Why did Haeyoung1 lean against the wall when Haeyoung1 was walking in the alley with Dokyung?",
+        "sub_questions": [
+            "What kind of wall is Haeyoung1 leaning against?",
+            "What kind of alley is this?"
+        ],
+        "sub_answers": [
+            "Haeyoung1 is leaning against a green wall.",
+            "it's not an alley, it's a street"
+        ]
+    },
+    {
+        "qid": 3197,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "Why did Haeyoung1 say that Dokyung is a drug?",
+        "sub_questions": [
+            "What kind of drug did Haeyoung1 say that Dokyung is?"
+        ],
+        "sub_answers": [
+            "cocaine"
+        ]
+    },
+    {
+        "qid": 8776,
+        "vid": "AnotherMissOh14_001_0000",
+        "main_question": "What did Dokyung and Haeyoung1 do when Dokyung and Haeyoung1 walked in the street?",
+        "sub_questions": [
+            "What is the name of the street that Dokyung and Haeyoung1 walked in"
+        ],
+        "sub_answers": [
+            "episode 12 of the korean drama my love from the star? gyeongbokgung"
+        ]
+    },
+    {
+        "qid": 9919085,
+        "vid": "AnotherMissOh14_001_0026",
+        "main_question": "What is the color of pants that Dokyung is wearing?",
+        "sub_questions": [
+            "What is the color of Dokyung's shirt?",
+            "What is the material of the pants that Dokyung is wearing?"
+        ],
+        "sub_answers": [
+            "white",
+            "cotton"
+        ]
+    },
+    {
+        "qid": 9951593,
+        "vid": "AnotherMissOh14_001_0026",
+        "main_question": "Who is the lover of Haeyoung1?",
+        "sub_questions": [
+            "Who is the lover of Haeyoung2?"
+        ],
+        "sub_answers": [
+            "Haeyoung2"
+        ]
+    },
+    {
+        "qid": 9951594,
+        "vid": "AnotherMissOh14_001_0026",
+        "main_question": "Where are Dokyung and Haeyoung1 hugging in the park?",
+        "sub_questions": [
+            "What kind of park is it?"
+        ],
+        "sub_answers": [
+            "It appears to be a public park."
+        ]
+    },
+    {
+        "qid": 9921695,
+        "vid": "AnotherMissOh14_001_0058",
+        "main_question": "What is Dokyung doing with wearing a shirt?",
+        "sub_questions": [
+            "What type of shirt is Dokyung wearing?"
+        ],
+        "sub_answers": [
+            "Dokyung is wearing a gray shirt."
+        ]
+    },
+    {
+        "qid": 9921753,
+        "vid": "AnotherMissOh14_001_0071",
+        "main_question": "Who is Haeyoung1's boyfriend?",
+        "sub_questions": [
+            "What is the name of Haeyoung1's boyfriend?"
+        ],
+        "sub_answers": [
+            "minho"
+        ]
+    },
+    {
+        "qid": 3225,
+        "vid": "AnotherMissOh14_002_0000",
+        "main_question": "How did Haeyoung1 do to express her happiness when Haeyoung1 came home?",
+        "sub_questions": [
+            "How did Haeyoung1 feel when she came home?"
+        ],
+        "sub_answers": [
+            "Haeyoung1 felt relieved when she came home."
+        ]
+    }
+]
