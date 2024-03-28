@@ -1,0 +1,895 @@
+[
+    {
+        "qid": 13335,
+        "vid": "AnotherMissOh17_014_0000",
+        "main_question": "Why did Sungjin tell Haeyoung1 not to talk with flowers ?",
+        "sub_questions": [
+            "What kind of flowers did Sungjin tell Haeyoung1 not to talk with?"
+        ]
+    },
+    {
+        "qid": 13648,
+        "vid": "AnotherMissOh17_032_0000",
+        "main_question": "Who wears striped shirts when Haeyoung2 is talking ?",
+        "sub_questions": [
+            "What color are the shirts that Haeyoung2 is wearing?"
+        ]
+    },
+    {
+        "qid": 13658,
+        "vid": "AnotherMissOh17_034_0000",
+        "main_question": "Why is Dokyung running in Dokyung 's illusion ?",
+        "sub_questions": [
+            "What kind of illusion is Dokyung running in?"
+        ]
+    },
+    {
+        "qid": 13851,
+        "vid": "AnotherMissOh17_049_0000",
+        "main_question": "Who was getting out of the office when workers are sitting on the chair ?",
+        "sub_questions": [
+            "What is the gender of the person getting out of the office when workers are sitting on the chair "
+        ]
+    },
+    {
+        "qid": 13857,
+        "vid": "AnotherMissOh17_050_0000",
+        "main_question": "What is the relationship between Haeyoung1 and Dokyung when Dokyung came out from Haeyoung1 's mind ?",
+        "sub_questions": [
+            "What is the state of the mind of Haeyoung1 when Dokyung came out from"
+        ]
+    },
+    {
+        "qid": 13862,
+        "vid": "AnotherMissOh17_050_0000",
+        "main_question": "Why was Dokyung coming out on Haeyoung1 's mind ?",
+        "sub_questions": [
+            "What was on Haeyoung1's mind?"
+        ]
+    },
+    {
+        "qid": 9923763,
+        "vid": "AnotherMissOh16_002_0082",
+        "main_question": "What color is Haeyoung1 's shirt ?",
+        "sub_questions": [
+            "What type of shirt is Haeyoung1 wearing?"
+        ]
+    },
+    {
+        "qid": 9952231,
+        "vid": "AnotherMissOh16_007_0315",
+        "main_question": "Who is wearing an electric massaging machine with eyes closed ?",
+        "sub_questions": [
+            "What type of machine is the person wearing?"
+        ]
+    },
+    {
+        "qid": 4015,
+        "vid": "AnotherMissOh16_009_0000",
+        "main_question": "How is related Deogi to Haeyoung1 when Haeyoung1 is looking for a burdock ?",
+        "sub_questions": [
+            "What kind of burdock is Haeyoung1 looking for?"
+        ]
+    },
+    {
+        "qid": 9945565,
+        "vid": "AnotherMissOh16_014_0510",
+        "main_question": "Who is leaving the scene by answering the phone in hurry ?",
+        "sub_questions": [
+            "What type of scene is this?"
+        ]
+    },
+    {
+        "qid": 8952,
+        "vid": "AnotherMissOh16_017_0000",
+        "main_question": "Why did Haeyoung1 drop down her chopsticks ?",
+        "sub_questions": [
+            "What type of chopsticks did Haeyoung1 drop down?"
+        ]
+    },
+    {
+        "qid": 4285,
+        "vid": "AnotherMissOh16_018_0000",
+        "main_question": "Why did Dokyung look the phone ?",
+        "sub_questions": [
+            "What kind of phone is Dokyung looking at?"
+        ]
+    },
+    {
+        "qid": 8955,
+        "vid": "AnotherMissOh16_018_0000",
+        "main_question": "Why is Dokyung holding on his mobile phone ?",
+        "sub_questions": [
+            "What kind of phone is Dokyung holding?"
+        ]
+    },
+    {
+        "qid": 9934459,
+        "vid": "AnotherMissOh16_018_0601",
+        "main_question": "What is the color of toothbrush that Haeyoung1 is holding in the bathroom ?",
+        "sub_questions": [
+            "What is the brand of toothbrush that Haeyoung1 is holding in the bathroom?"
+        ]
+    },
+    {
+        "qid": 9945828,
+        "vid": "AnotherMissOh16_018_0621",
+        "main_question": "What kind of mobile is Dokyung holding ?",
+        "sub_questions": [
+            "What kind of mobile is Dokyung holding?"
+        ]
+    },
+    {
+        "qid": 4345,
+        "vid": "AnotherMissOh16_020_0000",
+        "main_question": "Why did Sangseok rush to the company ?",
+        "sub_questions": [
+            "Why did Sangseok rush to the company?"
+        ]
+    },
+    {
+        "qid": 8964,
+        "vid": "AnotherMissOh16_020_0000",
+        "main_question": "Why was Sangseok so shocked to see the red stickers ?",
+        "sub_questions": [
+            "What color are the stickers?"
+        ]
+    },
+    {
+        "qid": 9934913,
+        "vid": "AnotherMissOh16_021_0688",
+        "main_question": "What pattern is Hun 's shirt ?",
+        "sub_questions": [
+            "What kind of pattern is Hun's shirt?"
+        ]
+    },
+    {
+        "qid": 9935775,
+        "vid": "AnotherMissOh16_026_0837",
+        "main_question": "Who is talking using his hands with excitement ?",
+        "sub_questions": [
+            "What is causing the excitement?"
+        ]
+    },
+    {
+        "qid": 9935779,
+        "vid": "AnotherMissOh16_026_0838",
+        "main_question": "Who is asking a question with a pin on its head ?",
+        "sub_questions": [
+            "What kind of pin is on the woman's head?"
+        ]
+    },
+    {
+        "qid": 9935873,
+        "vid": "AnotherMissOh16_026_0866",
+        "main_question": "Who is talking with a hair pin on its head ?",
+        "sub_questions": [
+            "What is on the head?"
+        ]
+    },
+    {
+        "qid": 4515,
+        "vid": "AnotherMissOh16_027_0000",
+        "main_question": "Why did Jiya said that Jiya better perform exorcism ?",
+        "sub_questions": [
+            "What kind of exorcism did Jiya perform?"
+        ]
+    },
+    {
+        "qid": 9936053,
+        "vid": "AnotherMissOh16_028_0902",
+        "main_question": "What pattern is Hun 's top ?",
+        "sub_questions": [
+            "What kind of pattern is Hun's top?",
+            "What color is Hun's top?"
+        ]
+    },
+    {
+        "qid": 9936545,
+        "vid": "AnotherMissOh16_030_1024",
+        "main_question": "Who is telling to have a seat with wearing earrings ?",
+        "sub_questions": [
+            "What type of seat is it?"
+        ]
+    },
+    {
+        "qid": 9936631,
+        "vid": "AnotherMissOh16_031_1061",
+        "main_question": "Who is talking to Jinsang with making gesture ?",
+        "sub_questions": [
+            "What kind of gesture is being made?"
+        ]
+    },
+    {
+        "qid": 9962819,
+        "vid": "AnotherMissOh16_032_1099",
+        "main_question": "What color shirt is Taejin wearing in front of Haeyoung1 in the aisle ?",
+        "sub_questions": [
+            "What is Taejin wearing in front of Haeyoung1 in the aisle?"
+        ]
+    },
+    {
+        "qid": 9936773,
+        "vid": "AnotherMissOh16_033_1128",
+        "main_question": "Who is lowering its head ?",
+        "sub_questions": [
+            "What type of head is being lowered?"
+        ]
+    },
+    {
+        "qid": 4783,
+        "vid": "AnotherMissOh16_035_0000",
+        "main_question": "Why did Haeyoung1 got into the rear door ?",
+        "sub_questions": [
+            "Why did Haeyoung1 got into the door?"
+        ]
+    },
+    {
+        "qid": 9936861,
+        "vid": "AnotherMissOh16_035_1184",
+        "main_question": "Who is changing the destination ?",
+        "sub_questions": [
+            "What is the destination being changed to?"
+        ]
+    },
+    {
+        "qid": 9936915,
+        "vid": "AnotherMissOh16_035_1210",
+        "main_question": "What color is Dokyung 's umbrella ?",
+        "sub_questions": [
+            "What color is Dokyung's umbrella?"
+        ]
+    },
+    {
+        "qid": 9936979,
+        "vid": "AnotherMissOh16_036_1232",
+        "main_question": "What is the relationship between Haeyoung1 and Dokyung under the umbrella ?",
+        "sub_questions": [
+            "What color is the umbrella?"
+        ]
+    },
+    {
+        "qid": 9923159,
+        "vid": "AnotherMissOh17_001_0032",
+        "main_question": "Whose umbrella does Dokyung give the person in the rain ?",
+        "sub_questions": [
+            "Whose umbrella does Dokyung give the person in the rain?"
+        ]
+    },
+    {
+        "qid": 9952319,
+        "vid": "AnotherMissOh17_001_0041",
+        "main_question": "Whose waist is Haeyoung1 holding while smiling ?",
+        "sub_questions": [
+            "Whose waist is Haeyoung2 holding while smiling?"
+        ]
+    },
+    {
+        "qid": 9923755,
+        "vid": "AnotherMissOh17_003_0073",
+        "main_question": "Whose hands is Haeyoung1 kissing while smiling ?",
+        "sub_questions": [
+            "Whose hands is Haeyoung2 kissing while smiling?"
+        ]
+    },
+    {
+        "qid": 9945147,
+        "vid": "AnotherMissOh17_010_0194",
+        "main_question": "What is the color of the mat Sukyung is doing a supported headstand ?",
+        "sub_questions": [
+            "What type of headstand is Sukyung doing?"
+        ]
+    },
+    {
+        "qid": 9945287,
+        "vid": "AnotherMissOh17_014_0264",
+        "main_question": "What mood is Haeyoung1 in while talking to the flower ?",
+        "sub_questions": [
+            "What kind of flower is Haeyoung1 talking to?"
+        ]
+    },
+    {
+        "qid": 9927765,
+        "vid": "AnotherMissOh17_016_0318",
+        "main_question": "What is Haeyoung1 doing with smile ?",
+        "sub_questions": [
+            "What kind of smile is Haeyoung1 having?"
+        ]
+    },
+    {
+        "qid": 9960529,
+        "vid": "AnotherMissOh17_017_0383",
+        "main_question": "Whose waist is Haeyoung1 is wrapping her arms around in the room ?",
+        "sub_questions": [
+            "What is Haeyoung1 wrapping her arms around in the room?"
+        ]
+    },
+    {
+        "qid": 14064,
+        "vid": "AnotherMissOh17_018_0000",
+        "main_question": "Why is Jinsang wearing a nice jacket when Jinsang dances in the club ?",
+        "sub_questions": [
+            "What kind of jacket is Jinsang wearing?"
+        ]
+    },
+    {
+        "qid": 9928591,
+        "vid": "AnotherMissOh17_018_0410",
+        "main_question": "Where is the place Jinsang dancing with the people ?",
+        "sub_questions": [
+            "What type of place is Jinsang dancing with the people?"
+        ]
+    },
+    {
+        "qid": 9952470,
+        "vid": "AnotherMissOh17_019_0422",
+        "main_question": "How does Jinsang wipe the sweat ?",
+        "sub_questions": [
+            "What does Jinsang wipe the sweat with?"
+        ]
+    },
+    {
+        "qid": 9945503,
+        "vid": "AnotherMissOh17_019_0424",
+        "main_question": "What mood is Jinsang in while proposing a toast ?",
+        "sub_questions": [
+            "What kind of mood is Jinsang in while proposing a toast?"
+        ]
+    },
+    {
+        "qid": 9962187,
+        "vid": "AnotherMissOh17_023_0481",
+        "main_question": "Where is Jinsang sitting in the club while touching his scarf ?",
+        "sub_questions": [
+            "What color is the scarf?"
+        ]
+    },
+    {
+        "qid": 4881,
+        "vid": "AnotherMissOh17_024_0000",
+        "main_question": "How does Dokyung feel when Haeyoung1 showed him her hand with bracelet ?",
+        "sub_questions": [
+            "What is the bracelet made of?"
+        ]
+    },
+    {
+        "qid": 9945993,
+        "vid": "AnotherMissOh17_024_0495",
+        "main_question": "Whose cheeks does Dokyung touch with his both hands ?",
+        "sub_questions": [
+            "What part of the body does Dokyung touch with his both hands?",
+            "Dokyung's hands are touching who's cheeks?"
+        ]
+    },
+    {
+        "qid": 9960669,
+        "vid": "AnotherMissOh17_026_0545",
+        "main_question": "What is the color of the shoes Taejin is wearing on the overpass ?",
+        "sub_questions": [
+            "What kind of overpass is Taejin standing on?"
+        ]
+    },
+    {
+        "qid": 9961549,
+        "vid": "AnotherMissOh17_026_0558",
+        "main_question": "Whose clothes the person grab on the bridge ?",
+        "sub_questions": [
+            "What kind of bridge is this?"
+        ]
+    },
+    {
+        "qid": 9934055,
+        "vid": "AnotherMissOh17_027_0573",
+        "main_question": "Where are the two maids standing ?",
+        "sub_questions": [
+            "What are the maids wearing?"
+        ]
+    },
+    {
+        "qid": 9934125,
+        "vid": "AnotherMissOh17_027_0577",
+        "main_question": "What is the chairman holding ?",
+        "sub_questions": [
+            "What is the chairman holding?"
+        ]
+    },
+    {
+        "qid": 9934129,
+        "vid": "AnotherMissOh17_027_0578",
+        "main_question": "What is the chairman wearing ?",
+        "sub_questions": [
+            "What is the color of the chairman's shirt?"
+        ]
+    },
+    {
+        "qid": 9934145,
+        "vid": "AnotherMissOh17_027_0580",
+        "main_question": "What is the chairman doing ?",
+        "sub_questions": [
+            "What does the chairman look like?"
+        ]
+    },
+    {
+        "qid": 9934153,
+        "vid": "AnotherMissOh17_027_0583",
+        "main_question": "What color hairpins does the chairman wear ?",
+        "sub_questions": [
+            "What is the name of the person wearing the hairpins?"
+        ]
+    },
+    {
+        "qid": 9934173,
+        "vid": "AnotherMissOh17_027_0588",
+        "main_question": "What is the chairman wearing ?",
+        "sub_questions": [
+            "What is the color of the chairman's shirt?"
+        ]
+    },
+    {
+        "qid": 9934179,
+        "vid": "AnotherMissOh17_027_0590",
+        "main_question": "What is the chairman doing ?",
+        "sub_questions": [
+            "Is the chairman a man or a woman?"
+        ]
+    },
+    {
+        "qid": 9952534,
+        "vid": "AnotherMissOh17_028_0595",
+        "main_question": "Who is holding a clutch ?",
+        "sub_questions": [
+            "What kind of clutch is it?"
+        ]
+    },
+    {
+        "qid": 9935059,
+        "vid": "AnotherMissOh17_032_0717",
+        "main_question": "Who is nodding head ?",
+        "sub_questions": [
+            "What type of head is the person nodding?"
+        ]
+    },
+    {
+        "qid": 9946116,
+        "vid": "AnotherMissOh17_034_0756",
+        "main_question": "Where is Dokyung wearing a seatbelt ?",
+        "sub_questions": [
+            "What kind of seatbelt is Dokyung wearing?"
+        ]
+    },
+    {
+        "qid": 9952680,
+        "vid": "AnotherMissOh17_036_0785",
+        "main_question": "What is the thing in the hourglass ?",
+        "sub_questions": [
+            "What is in the hourglass?"
+        ]
+    },
+    {
+        "qid": 5548,
+        "vid": "AnotherMissOh17_037_0000",
+        "main_question": "What did Dokyung do to tell Haeyoung1 about his illusion after the hypnosis ?",
+        "sub_questions": [
+            "What kind of hypnosis did Dokyung do to tell Haeyoung1 about"
+        ]
+    },
+    {
+        "qid": 5651,
+        "vid": "AnotherMissOh17_038_0000",
+        "main_question": "Whose phone is on the bed while Haeyoung1 was sitting right next it ?",
+        "sub_questions": [
+            "What kind of phone is on the bed?"
+        ]
+    },
+    {
+        "qid": 5804,
+        "vid": "AnotherMissOh17_039_0000",
+        "main_question": "Why did Dokyung sit in the driver 's seat of the car ?",
+        "sub_questions": [
+            "What type of seat is Dokyung sitting in?"
+        ]
+    },
+    {
+        "qid": 9952704,
+        "vid": "AnotherMissOh17_041_0909",
+        "main_question": "What is the board made of ?",
+        "sub_questions": [
+            "What material is the board made of?"
+        ]
+    },
+    {
+        "qid": 9936095,
+        "vid": "AnotherMissOh17_042_0918",
+        "main_question": "What are the green things on the road ?",
+        "sub_questions": [
+            "What color are the things on the road?"
+        ]
+    },
+    {
+        "qid": 6081,
+        "vid": "AnotherMissOh17_043_0000",
+        "main_question": "Why did Dokyung look impressed during the breakfast with Haeyoung1 's parents ?",
+        "sub_questions": [
+            "What is the relationship between Dokyung and Haeyoung1's parents?"
+        ]
+    },
+    {
+        "qid": 9936177,
+        "vid": "AnotherMissOh17_043_0947",
+        "main_question": "What is on Deogi 's spoon ?",
+        "sub_questions": [
+            "What type of spoon is Deogi using?"
+        ]
+    },
+    {
+        "qid": 9960713,
+        "vid": "AnotherMissOh17_043_0955",
+        "main_question": "What does the person use to dip into jjigae at the near edge of the bowl ?",
+        "sub_questions": [
+            "What type of food is jjigae?"
+        ]
+    },
+    {
+        "qid": 9936201,
+        "vid": "AnotherMissOh17_043_0956",
+        "main_question": "What does Dokyung use to drink the jiigae after blowing on the jjigae ?",
+        "sub_questions": [
+            "What does Dokyung use to drink the jiigae after blowing on the ",
+            "What does Dokyung use to drink the jjigae after blowing on the "
+        ]
+    },
+    {
+        "qid": 9960721,
+        "vid": "AnotherMissOh17_044_0965",
+        "main_question": "What does the person use to check the weather of the Korean peninsula ?",
+        "sub_questions": [
+            "What does the person use to check the weather of the Korean peninsula?"
+        ]
+    },
+    {
+        "qid": 6702,
+        "vid": "AnotherMissOh17_052_0000",
+        "main_question": "Why is Haeyoung1 crossing the crosswalk ?",
+        "sub_questions": [
+            "Why is Haeyoung1 crossing the crosswalk?"
+        ]
+    },
+    {
+        "qid": 9952358,
+        "vid": "AnotherMissOh18_002_0038",
+        "main_question": "Who are eating noodle in the living room ?",
+        "sub_questions": [
+            "What kind of noodle are they eating?"
+        ]
+    },
+    {
+        "qid": 9952376,
+        "vid": "AnotherMissOh18_003_0055",
+        "main_question": "Who is stretching arm ?",
+        "sub_questions": [
+            "What type of arm is being stretched?"
+        ]
+    },
+    {
+        "qid": 9938607,
+        "vid": "AnotherMissOh18_004_0069",
+        "main_question": "What is Dokyung feeling ?",
+        "sub_questions": [
+            "What kind of feeling is Dokyung feeling?"
+        ]
+    },
+    {
+        "qid": 12849,
+        "vid": "AnotherMissOh18_006_0000",
+        "main_question": "What does Hun order people after receiving the call ?",
+        "sub_questions": [
+            "What does Hun order people to do after receiving the call?"
+        ]
+    },
+    {
+        "qid": 12893,
+        "vid": "AnotherMissOh18_008_0000",
+        "main_question": "Whose drink is on the table when the chairman is grabbing a cup ?",
+        "sub_questions": [
+            "What kind of drink is on the table when the chairman is grabbing a cup?"
+        ]
+    },
+    {
+        "qid": 14054,
+        "vid": "AnotherMissOh18_008_0000",
+        "main_question": "How did Taejin cope with the chairman when the chairman speaking evil of Taejin ?",
+        "sub_questions": [
+            "What kind of evil did the chairman speak of Taejin?"
+        ]
+    },
+    {
+        "qid": 9952430,
+        "vid": "AnotherMissOh18_012_0205",
+        "main_question": "What shape is Sukyung 's bag ?",
+        "sub_questions": [
+            "What kind of shape is Sukyung's bag?"
+        ]
+    },
+    {
+        "qid": 13086,
+        "vid": "AnotherMissOh18_014_0000",
+        "main_question": "How does Deogi look when Deogi said to pack Haeyoung1 's bag to Haeyoung1 ?",
+        "sub_questions": [
+            "What type of bag is Deogi packing for Haeyoung1?"
+        ]
+    },
+    {
+        "qid": 9946972,
+        "vid": "AnotherMissOh18_017_0370",
+        "main_question": "What is Kyungsu taking off in the trunk ?",
+        "sub_questions": [
+            "What is Kyungsu taking off in the trunk?"
+        ]
+    },
+    {
+        "qid": 14074,
+        "vid": "AnotherMissOh18_024_0000",
+        "main_question": "What does Kyungsu do after calling Dokyung to recommend foods for his health ?",
+        "sub_questions": [
+            "What kind of foods does Kyungsu recommend to Dokyung?"
+        ]
+    },
+    {
+        "qid": 9946980,
+        "vid": "AnotherMissOh18_024_0599",
+        "main_question": "What is the pencil used for ?",
+        "sub_questions": [
+            "What kind of pencil is it?"
+        ]
+    },
+    {
+        "qid": 13303,
+        "vid": "AnotherMissOh18_028_0000",
+        "main_question": "How does Kyungsu do writing the information on the TV while Deogi is sleeping ?",
+        "sub_questions": [
+            "What kind of information does Kyungsu write on the TV while Deogi is sleeping"
+        ]
+    },
+    {
+        "qid": 14090,
+        "vid": "AnotherMissOh18_028_0000",
+        "main_question": "Why Kyungsu was writing something on his note ?",
+        "sub_questions": [
+            "What was Kyungsu writing on his note?"
+        ]
+    },
+    {
+        "qid": 13387,
+        "vid": "AnotherMissOh18_029_0000",
+        "main_question": "Why does Jiya think that Deogi has American mind ?",
+        "sub_questions": [
+            "What kind of mind does Jiya think that Deogi has?"
+        ]
+    },
+    {
+        "qid": 9967769,
+        "vid": "AnotherMissOh18_029_0780",
+        "main_question": "Who is putting its hand under the table ?",
+        "sub_questions": [
+            "What kind of hand is putting under the table?"
+        ]
+    },
+    {
+        "qid": 9967791,
+        "vid": "AnotherMissOh18_030_0841",
+        "main_question": "Where is Deogi speaking in gray jacket ?",
+        "sub_questions": [
+            "What color is Deogi's jacket?"
+        ]
+    },
+    {
+        "qid": 13438,
+        "vid": "AnotherMissOh18_032_0000",
+        "main_question": "Why did Jinsang carry plunger to house ?",
+        "sub_questions": [
+            "What kind of plunger did Jinsang carry?"
+        ]
+    },
+    {
+        "qid": 14075,
+        "vid": "AnotherMissOh18_032_0000",
+        "main_question": "How does Jinsang look when enters the house with plumber ?",
+        "sub_questions": [
+            "What does the plumber look like?"
+        ]
+    },
+    {
+        "qid": 13479,
+        "vid": "AnotherMissOh18_035_0000",
+        "main_question": "How did Dokyung reply when Haeyoung1 offers food made by Haeyoung1 ?",
+        "sub_questions": [
+            "What kind of food did Haeyoung1 offer to Dokyung?"
+        ]
+    },
+    {
+        "qid": 9967919,
+        "vid": "AnotherMissOh18_039_1069",
+        "main_question": "Who kissed on its thumbs at the table ?",
+        "sub_questions": [
+            "What is the color of the thumbs?"
+        ]
+    },
+    {
+        "qid": 13560,
+        "vid": "AnotherMissOh18_040_0000",
+        "main_question": "How does Anna think about going on reverse order after looking at Sukyung 's situation ?",
+        "sub_questions": [
+            "What kind of order does Anna think about going on after looking at Sukyung's situation?"
+        ]
+    },
+    {
+        "qid": 9967945,
+        "vid": "AnotherMissOh18_040_1094",
+        "main_question": "What is Jinsang doing after making an okay sign ?",
+        "sub_questions": [
+            "What kind of sign is Jinsang making?"
+        ]
+    },
+    {
+        "qid": 9967965,
+        "vid": "AnotherMissOh18_041_1100",
+        "main_question": "Who is talking with its hand on its chin ?",
+        "sub_questions": [
+            "What type of hand is on its chin?",
+            "What is the chin of the person talking with its hand on its chin?"
+        ]
+    },
+    {
+        "qid": 9968027,
+        "vid": "AnotherMissOh18_043_1131",
+        "main_question": "Who is speaking with a nod in a white jacket ?",
+        "sub_questions": [
+            "Who is speaking with a nod in a white jacket?"
+        ]
+    },
+    {
+        "qid": 9968133,
+        "vid": "AnotherMissOh18_044_1175",
+        "main_question": "Where is Dokyung lying without consciousness in blood ?",
+        "sub_questions": [
+            "What state of consciousness is Dokyung in?",
+            "What kind of blood is Dokyung lying in?"
+        ]
+    },
+    {
+        "qid": 13597,
+        "vid": "AnotherMissOh18_045_0000",
+        "main_question": "How does Haeyoung1 do to find Dokyung after senses the ominous sign ?",
+        "sub_questions": [
+            "What kind of sign does Haeyoung1 senses?"
+        ]
+    },
+    {
+        "qid": 9968197,
+        "vid": "AnotherMissOh18_045_1226",
+        "main_question": "Where is Dokyung lying down without consciousness among people ?",
+        "sub_questions": [
+            "What are the people doing in the picture?"
+        ]
+    },
+    {
+        "qid": 13611,
+        "vid": "AnotherMissOh18_046_0000",
+        "main_question": "How did Haeyoung1 feel when everyone is fighting about her wedding even nobody was sure Dokyung is alive ?",
+        "sub_questions": [
+            "Who was not sure Dokyung is alive?"
+        ]
+    },
+    {
+        "qid": 9968217,
+        "vid": "AnotherMissOh18_046_1228",
+        "main_question": "Who is wearing a bag on its shoulder ?",
+        "sub_questions": [
+            "What type of bag is on the shoulder?"
+        ]
+    },
+    {
+        "qid": 9968237,
+        "vid": "AnotherMissOh18_046_1234",
+        "main_question": "Who is talking with a calendar in its hand ?",
+        "sub_questions": [
+            "What kind of calendar is it?"
+        ]
+    },
+    {
+        "qid": 9968243,
+        "vid": "AnotherMissOh18_046_1239",
+        "main_question": "Who is Kyungsu listening to with a serious face ?",
+        "sub_questions": [
+            "What kind of face is Kyungsu listening to with?"
+        ]
+    },
+    {
+        "qid": 9968245,
+        "vid": "AnotherMissOh18_046_1240",
+        "main_question": "Who is talking with a hairpin on its head ?",
+        "sub_questions": [
+            "What kind of hairpin is it?"
+        ]
+    },
+    {
+        "qid": 9968253,
+        "vid": "AnotherMissOh18_046_1243",
+        "main_question": "Who is talking with a hairpin on its head ?",
+        "sub_questions": [
+            "What kind of hairpin is it?"
+        ]
+    },
+    {
+        "qid": 9968255,
+        "vid": "AnotherMissOh18_046_1244",
+        "main_question": "Who starts to talk in a blue jacket next to Sukyung ?",
+        "sub_questions": [
+            "What color is the jacket?"
+        ]
+    },
+    {
+        "qid": 9968301,
+        "vid": "AnotherMissOh18_046_1267",
+        "main_question": "Who is standing behind Deogi with a nervous expression on its face ?",
+        "sub_questions": [
+            "What is the expression on the person's face?"
+        ]
+    },
+    {
+        "qid": 9968481,
+        "vid": "AnotherMissOh18_047_1326",
+        "main_question": "Who is waving its both hands among the people ?",
+        "sub_questions": [
+            "What kind of hands are they waving?"
+        ]
+    },
+    {
+        "qid": 3350,
+        "vid": "AnotherMissOh18_003_0000",
+        "main_question": "Why does Soontack wear a white gown when talking to Dokyung and Haeyoung1 ?",
+        "sub_questions": [
+            "What type of gown does Soontack wear when talking to Dokyung and Haeyoung"
+        ]
+    },
+    {
+        "qid": 8967,
+        "vid": "AnotherMissOh18_006_0000",
+        "main_question": "Why Gitae was sitting in the stair while moving the audio mixer with Sangseok and Yijoon ?",
+        "sub_questions": [
+            "What kind of mixer is Gitae moving with Sangseok and Yijoon"
+        ]
+    },
+    {
+        "qid": 3486,
+        "vid": "AnotherMissOh18_006_0000",
+        "main_question": "Why did Gitae scream when Gitae was carrying the audio mixer with Sangseok ?",
+        "sub_questions": [
+            "What kind of mixer was Gitae carrying with Sangseok?"
+        ]
+    },
+    {
+        "qid": 3506,
+        "vid": "AnotherMissOh18_007_0000",
+        "main_question": "How did Dokyung feel when watching the stickers on his properties were removed ?",
+        "sub_questions": [
+            "What kind of stickers were on Dokyung's properties?"
+        ]
+    },
+    {
+        "qid": 4187,
+        "vid": "AnotherMissOh18_020_0000",
+        "main_question": "Whose phone is on the floor when Dokyung and Haeyoung1 were lying on the couch ?",
+        "sub_questions": [
+            "Whose phone is on the floor when Dokyung and Haeyoung1 were lying"
+        ]
+    },
+    {
+        "qid": 13017,
+        "vid": "AnotherMissOh16_012_0000",
+        "main_question": "How did Anna do to record the raining sound when Anna was in the studio ?",
+        "sub_questions": [
+            "What kind of sound did Anna do to record the raining sound when Anna was in the studio?"
+        ]
+    }
+]
