@@ -1,4 +1,5 @@
 import os
+import json
 import argparse
 
 from transformers import InstructBlipProcessor, InstructBlipForConditionalGeneration
@@ -7,27 +8,7 @@ from PIL import Image
 import requests
 from glob import glob
 
-
-def get_info_from_vid(vid):
-    episode_id = vid[13:15]
-    scene_id = vid[16:19]
-    shot_id = vid[20:]
-
-    return episode_id, scene_id, shot_id
-
-
-def get_image_from_vid(image_dir, vid):
-    episode_id, scene_id, shot_id = get_info_from_vid(vid)
-    
-    if shot_id == "0000":
-        image_path = os.path.join(image_dir, f"AnotherMissOh{episode_id}", f"{scene_id}", "**/*.jpg")
-        image_list = glob(image_path, recursive=True)
-    
-    else:
-        image_path = os.path.join(image_dir, f"/AnotherMissOh{episode_id}/{scene_id}/{shot_id}/*.jpg")
-        image_list = glob(image_path)
-    
-    return image_list
+from utils import *
 
 
 class SNUModule:
@@ -47,14 +28,14 @@ class SNUModule:
         self.model.to(self.device)
         
         
-    def _get_outputs(self, image, text):
-        inputs = self.processor(images=image, text=text, return_tensors="pt").to(self.device)
-        for k, v in inputs.items():
-            print(f"{k}: {v.shape}")
+    def _get_outputs(self, images, text):
+        inputs = self.processor(images=images, text=text, return_tensors="pt").to(self.device)
+        # for k, v in inputs.items():
+            # print(f"{k}: {v.shape}")
         
         outputs = self.model.generate(
             **inputs,
-            do_sample=False,
+            do_sample=True,
             num_beams=5,
             max_length=256,
             min_length=1,
@@ -68,25 +49,25 @@ class SNUModule:
         return generated_text
         
         
-    def get_sub_answer(self, image, sub_q):
-        print('sub_q:', sub_q)
-        return self._get_outputs(image, sub_q)
+    def get_sub_answer(self, images, sub_q):
+        # print('sub_q:', sub_q)
+        return self._get_outputs(images, sub_q)
     
     
-    def get_main_answer(self, image, main_question, sub_q_list, sub_a_list):
+    def get_main_answer(self, images, main_question, sub_q_list, sub_a_list):
         prompt = f"Instructions: Given a picture, main_question and Q&A results that will help answer the main question. "
         prompt += "Our goal is to answer the main_question. "
-        prompt += f"main_question: {main_question} "
+        prompt += f"\nmain_question: {main_question} "
         for i, (sub_q, sub_a) in enumerate(zip(sub_q_list, sub_a_list)):
-            prompt += f"{sub_q} {sub_a}. "
+            prompt += f"\n{sub_q} {sub_a}"
             # prompt += f"sub_q_{i+1}: {sub_q} "
             # prompt += f"sub_a_{i+1}: {sub_a}. "
-        prompt += f"main_question: {main_question} "
+        prompt += f"\nmain_question: {main_question} "
         # prompt += "main_answer: "
         
         print('prompt:', prompt)
         
-        return self._get_outputs(image, prompt)
+        return self._get_outputs(images, prompt)
 
 
 def main():
@@ -97,6 +78,36 @@ def main():
     snu_module = SNUModule(args)
     
     # TODO: gradio
+    
+    
+    # sample sub q generate    
+    image = Image.open("demo/IMAGE_0000004657.jpg").convert("RGB")
+    sub_q = "What are Jeongsuk and Deogi wearing?"
+    print('sample sub_q:', sub_q)
+    print('sample sub_a:', snu_module.get_sub_answer(image, sub_q))
+    
+    
+    # answer the main_question
+    samples = json.load(open(args.output_KHU_path, 'r'))
+    
+    for i, sample in enumerate(samples):
+        main_q = sample['main_question'] # ex. "Why did Sungjin tell Haeyoung1 not to talk with flowers ?"
+        sub_qs = sample['sub_questions'] # ex, ["What kind of flowers did Sungjin tell Haeyoung1 not to talk with?"]
+        vid = sample['vid']              # ex. "AnotherMissOh17_014_0000"
+        
+        # image_paths = get_image_path(args, sample)
+        image_path = get_image_from_vid(args.root_dir, vid)[0]
+        print(f'{i:4d}th | image_path: {image_path}')
+        
+        # images = [Image.open(image_path).convert("RGB") for image_path in image_paths]
+        images = Image.open(image_path).convert("RGB")
+        
+        sub_as = [snu_module.get_sub_answer(images, sub_q) for sub_q in sub_qs]
+        main_a = snu_module.get_main_answer(images, main_q, sub_qs, sub_as)
+        print('main_a:', main_a)
+        
+    
+    return
     
     
     # 아래는 데모용 코드
@@ -116,6 +127,10 @@ def add_args(parser):
     parser.add_argument("--model_name_or_path", type=str, default="Salesforce/instructblip-vicuna-7b")# "Salesforce/blip2-flan-t5-xxl"
     parser.add_argument("--cache_dir", type=str)
     # parser.add_argument("--image_dir", type=str, required=True)
+    
+    parser.add_argument('--root_dir', type=str, default="/data1/AnotherMissOh/AnotherMissOh_images/")
+    parser.add_argument("--output_KHU_path", type=str, default="../output_sample/output_KHU.json")
+    # parser.add_argument('--max_vision_num', type=int, default=1)
     
     return parser
 
