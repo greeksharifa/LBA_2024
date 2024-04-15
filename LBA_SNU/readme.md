@@ -37,7 +37,33 @@ parser.add_argument('--root_dir', type=str, default="/data1/AnotherMissOh/Anothe
 parser.add_argument("--output_KHU_path", type=str, default="../output_sample/output_KHU.json")
 ```
 
-## AnotherMissOh data sample
+## Data sample
+
+- output_KHU.json
+
+```json
+[
+    {
+        "qid": 13335,
+        "vid": "AnotherMissOh17_014_0000",
+        "main_question": "Why did Sungjin tell Haeyoung1 not to talk with flowers ?",
+        "sub_questions": [
+            "What kind of flowers did Sungjin tell Haeyoung1 not to talk with?"
+        ]
+    },
+    {
+        "qid": 13648,
+        "vid": "AnotherMissOh17_032_0000",
+        "main_question": "Who wears striped shirts when Haeyoung2 is talking ?",
+        "sub_questions": [
+            "What color are the shirts that Haeyoung2 is wearing?"
+        ]
+    },
+    ...
+]
+```
+
+- AnotherMissOh
 
 ```json
 [
