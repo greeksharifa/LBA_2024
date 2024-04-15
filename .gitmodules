@@ -4,3 +4,6 @@
 [submodule "LBA-DramaQG"]
 	path = LBA-DramaQG
 	url = https://github.com/gminipark/LBA-DramaQG.git
+[submodule "SeViLA"]
+	path = SeViLA
+	url = https://github.com/Yui010206/SeViLA.git
