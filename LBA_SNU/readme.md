@@ -2,6 +2,7 @@
 
 ## Installation
 ```bash
+# 240422 기준 작동
 # conda
 conda create -n LBA_SNU python=3.8
 conda activate LBA_SNU
