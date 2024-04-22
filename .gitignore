@@ -1,3 +1,6 @@
+# output
+**/z_output_ckpt/
+
 # IDE
 .vscode/
 .idea/
