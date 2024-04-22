@@ -57,12 +57,13 @@ class SNUModule:
     def get_main_answer(self, images, main_question, sub_q_list, sub_a_list):
         prompt = f"Instructions: Given a picture, main_question and Q&A results that will help answer the main question. "
         prompt += "Our goal is to answer the main_question. "
-        prompt += f"\nmain_question: {main_question} "
+        # prompt += f"\nmain_question: {main_question} "
+        prompt += "\nsub Q&A results:"
         for i, (sub_q, sub_a) in enumerate(zip(sub_q_list, sub_a_list)):
             prompt += f"\n{sub_q} {sub_a}"
             # prompt += f"sub_q_{i+1}: {sub_q} "
             # prompt += f"sub_a_{i+1}: {sub_a}. "
-        prompt += f"\nmain_question: {main_question} "
+        prompt += f"\nNow answer the main_question: {main_question} "
         # prompt += "main_answer: "
         
         print('prompt:', prompt)
@@ -104,7 +105,7 @@ def main():
         
         sub_as = [snu_module.get_sub_answer(images, sub_q) for sub_q in sub_qs]
         main_a = snu_module.get_main_answer(images, main_q, sub_qs, sub_as)
-        print('main_a:', main_a)
+        print('main_a:', main_a, '\n')
         
     
     return
