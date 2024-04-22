@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 CUDA_LAUNCH_BLOCKING=1 python test.py --cfg-path yamls/DramaQA_eval_sq_finetune.yaml

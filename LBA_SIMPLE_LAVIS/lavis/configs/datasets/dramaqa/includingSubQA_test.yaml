@@ -1,0 +1,103 @@
+ # Copyright (c) 2022, salesforce.com, inc.
+ # All rights reserved.
+ # SPDX-License-Identifier: BSD-3-Clause
+ # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+datasets:
+  dramaqa_subqa_eval: # name of the registry_name of dataset builder, in lavis/datasets/builders/caption_builder.py
+    # data_dir: ${env.data_dir}/datasets
+    data_type: videos # [images|videos|features]
+
+#    prompt_type: Reasoner   # ["Questioner_SingleSubQ", "Questioner_MultipleSubQ", "Answerer", "Reasoner"]
+
+    build_info:
+      # Be careful not to append minus sign (-) before split to avoid itemizing
+      annotations:
+        train:
+          url:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+          storage:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+        val:
+          url:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+          storage:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+        test:
+          url:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+          storage:
+              - /home/ywjang/LBA_2024/Integration/Integration-Outputs/LBA_data.json
+#        test:
+#          url:
+#              - AnotherMissOh/AnotherMissOhQA_test_set.json
+#          storage:
+#              - AnotherMissOh/AnotherMissOhQA_test_set.json
+        ans2label:
+          url: AnotherMissOh/ans2label.json
+          storage: AnotherMissOh/ans2label.json
+      videos:
+        storage: AnotherMissOh/images/
+
+
+
+
+
+#  # Copyright (c) 2022, salesforce.com, inc.
+#  # All rights reserved.
+#  # SPDX-License-Identifier: BSD-3-Clause
+#  # For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+
+# datasets:
+#   dramaqa_subqa_eval: # name of the registry_name of dataset builder, in lavis/datasets/builders/caption_builder.py
+#     # data_dir: ${env.data_dir}/datasets
+#     data_type: videos # [images|videos|features]
+
+# #    prompt_type: Reasoner   # ["Questioner_SingleSubQ", "Questioner_MultipleSubQ", "Answerer", "Reasoner"]
+
+#     build_info:
+#       # Be careful not to append minus sign (-) before split to avoid itemizing
+#       annotations:
+#         train:
+#           url:
+#               - AnotherMissOh/AnotherMissOhQA_train_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+#           storage:
+#               - AnotherMissOh/AnotherMissOhQA_train_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+#         val:
+#           url:
+#               - AnotherMissOh/AnotherMissOhQA_val_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+#           storage:
+#               - AnotherMissOh/AnotherMissOhQA_val_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+#         test:
+#           url:
+#               - AnotherMissOh/AnotherMissOhQA_val_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+#           storage:
+#               - AnotherMissOh/AnotherMissOhQA_val_set.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_KHU.json
+#               - /home/ywjang/LBA_2024/Integration/Integration-Outputs/output_sub_answer_240122_182058.json
+#               - /home/ywjang/LBA_2024/LBA-SNU/prompts.json
+# #        test:
+# #          url:
+# #              - AnotherMissOh/AnotherMissOhQA_test_set.json
+# #          storage:
+# #              - AnotherMissOh/AnotherMissOhQA_test_set.json
+#         ans2label:
+#           url: AnotherMissOh/ans2label.json
+#           storage: AnotherMissOh/ans2label.json
+#       videos:
+#         storage: AnotherMissOh/images/

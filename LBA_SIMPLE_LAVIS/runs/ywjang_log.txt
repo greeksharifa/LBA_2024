@@ -1,0 +1,381 @@
+2024-03-20 15:15:00,957 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:175]	| 
+=====  Running Parameters    =====
+2024-03-20 15:15:00,957 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:176]	| {
+    "accum_grad_iters": 16,
+    "amp": true,
+    "batch_size_eval": 1,
+    "batch_size_train": 8,
+    "device": "cuda",
+    "dist_backend": "nccl",
+    "dist_url": "env://",
+    "distributed": true,
+    "evaluate": false,
+    "full_evaluation": true,
+    "gpu": 0,
+    "init_lr": 1e-05,
+    "lr_sched": "linear_warmup_cosine_lr",
+    "main_answer_inference": "perplexity",
+    "max_epoch": 10,
+    "max_len": 128,
+    "min_len": 1,
+    "min_lr": 0,
+    "num_beams": 5,
+    "num_workers": 0,
+    "output_dir": "z_output_ckpt/",
+    "prompt": "{}",
+    "rank": 0,
+    "resume_ckpt_path": null,
+    "seed": 20231120,
+    "task": "dramaqa_sq_task",
+    "test_splits": [
+        "test"
+    ],
+    "train_splits": [
+        "train"
+    ],
+    "valid_splits": [
+        "val"
+    ],
+    "warmup_lr": 1e-08,
+    "warmup_steps": 16000,
+    "weight_decay": 0.05,
+    "world_size": 4
+}
+2024-03-20 15:15:00,957 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:178]	| 
+======  Dataset Attributes  ======
+2024-03-20 15:15:00,958 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:183]	| 
+======== dramaqa_sq =======
+2024-03-20 15:15:00,958 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:185]	| {
+    "build_info": {
+        "annotations": {
+            "ans2label": {
+                "storage": "AnotherMissOh/ans2label.json",
+                "url": "AnotherMissOh/ans2label.json"
+            },
+            "test": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            },
+            "train": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ]
+            },
+            "val": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            }
+        },
+        "videos": {
+            "storage": "AnotherMissOh/images/"
+        }
+    },
+    "data_type": "videos",
+    "text_processor": {
+        "eval": {
+            "name": "blip_question"
+        },
+        "train": {
+            "name": "blip_question"
+        }
+    },
+    "vis_processor": {
+        "eval": {
+            "image_size": 224,
+            "name": "blip_image_eval"
+        },
+        "train": {
+            "image_size": 224,
+            "name": "blip2_image_train"
+        }
+    }
+}
+2024-03-20 15:15:00,958 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:189]	| 
+======  Model Attributes  ======
+2024-03-20 15:15:00,958 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:190]	| {
+    "arch": "blip2_vicuna_instruct_sq",
+    "drop_path_rate": 0,
+    "finetuned": "/home/ywjang/simplesnulavis/lavis/z_output_ckpt/20231207111/checkpoint_63.pth",
+    "freeze_vit": true,
+    "image_size": 224,
+    "llm_model": "/home/ywjang/models/lmsys/vicuna-7b-v1.1",
+    "load_finetuned": true,
+    "load_pretrained": true,
+    "model_type": "vicuna7b",
+    "num_query_token": 32,
+    "num_sub_questions": 2,
+    "prompt": "blip2_instruct_vicuna7b.yaml Prompt. Q: {} A:",
+    "return_sub_qa": true,
+    "use_grad_checkpoint": true,
+    "vit_precision": "fp16"
+}
+2024-03-20 15:15:00,959 [   INFO]in [          setup_task() in     /home/ywjang/simplesnulavis/lavis/tasks/vqa.py:397]	| [91min setup_task(), prompt: {}[0m
+2024-03-20 15:15:00,959 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 56]	| name: dramaqa_sq
+2024-03-20 15:15:00,959 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 58]	| dataset_config: {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': ['AnotherMissOh/AnotherMissOhQA_train_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_train_set.json']}, 'val': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'test': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'ans2label': {'url': 'AnotherMissOh/ans2label.json', 'storage': 'AnotherMissOh/ans2label.json'}}, 'videos': {'storage': 'AnotherMissOh/images/'}}, 'vis_processor': {'train': {'name': 'blip2_image_train', 'image_size': 224}, 'eval': {'name': 'blip_image_eval', 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question'}, 'eval': {'name': 'blip_question'}}}
+2024-03-20 15:15:00,960 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py: 57]	| Building datasets...
+2024-03-20 15:15:00,960 [   INFO]in [               build() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py:186]	| prompt_type: None
+2024-03-20 15:17:19,459 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:175]	| 
+=====  Running Parameters    =====
+2024-03-20 15:17:19,460 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:176]	| {
+    "accum_grad_iters": 16,
+    "amp": true,
+    "batch_size_eval": 1,
+    "batch_size_train": 8,
+    "device": "cuda",
+    "dist_backend": "nccl",
+    "dist_url": "env://",
+    "distributed": true,
+    "evaluate": false,
+    "full_evaluation": true,
+    "gpu": 0,
+    "init_lr": 1e-05,
+    "lr_sched": "linear_warmup_cosine_lr",
+    "main_answer_inference": "perplexity",
+    "max_epoch": 10,
+    "max_len": 128,
+    "min_len": 1,
+    "min_lr": 0,
+    "num_beams": 5,
+    "num_workers": 0,
+    "output_dir": "z_output_ckpt/",
+    "prompt": "{}",
+    "rank": 0,
+    "resume_ckpt_path": null,
+    "seed": 20231120,
+    "task": "dramaqa_sq_task",
+    "test_splits": [
+        "test"
+    ],
+    "train_splits": [
+        "train"
+    ],
+    "valid_splits": [
+        "val"
+    ],
+    "warmup_lr": 1e-08,
+    "warmup_steps": 16000,
+    "weight_decay": 0.05,
+    "world_size": 4
+}
+2024-03-20 15:17:19,460 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:178]	| 
+======  Dataset Attributes  ======
+2024-03-20 15:17:19,460 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:183]	| 
+======== dramaqa_sq =======
+2024-03-20 15:17:19,460 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:185]	| {
+    "build_info": {
+        "annotations": {
+            "ans2label": {
+                "storage": "AnotherMissOh/ans2label.json",
+                "url": "AnotherMissOh/ans2label.json"
+            },
+            "test": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            },
+            "train": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ]
+            },
+            "val": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            }
+        },
+        "videos": {
+            "storage": "AnotherMissOh/images/"
+        }
+    },
+    "data_type": "videos",
+    "text_processor": {
+        "eval": {
+            "name": "blip_question"
+        },
+        "train": {
+            "name": "blip_question"
+        }
+    },
+    "vis_processor": {
+        "eval": {
+            "image_size": 224,
+            "name": "blip_image_eval"
+        },
+        "train": {
+            "image_size": 224,
+            "name": "blip2_image_train"
+        }
+    }
+}
+2024-03-20 15:17:19,460 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:189]	| 
+======  Model Attributes  ======
+2024-03-20 15:17:19,461 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:190]	| {
+    "arch": "blip2_vicuna_instruct_sq",
+    "drop_path_rate": 0,
+    "finetuned": "/home/ywjang/simplesnulavis/lavis/z_output_ckpt/20231207111/checkpoint_63.pth",
+    "freeze_vit": true,
+    "image_size": 224,
+    "llm_model": "/home/ywjang/models/lmsys/vicuna-7b-v1.1",
+    "load_finetuned": true,
+    "load_pretrained": true,
+    "model_type": "vicuna7b",
+    "num_query_token": 32,
+    "num_sub_questions": 2,
+    "prompt": "blip2_instruct_vicuna7b.yaml Prompt. Q: {} A:",
+    "return_sub_qa": true,
+    "use_grad_checkpoint": true,
+    "vit_precision": "fp16"
+}
+2024-03-20 15:17:19,461 [   INFO]in [          setup_task() in     /home/ywjang/simplesnulavis/lavis/tasks/vqa.py:397]	| [91min setup_task(), prompt: {}[0m
+2024-03-20 15:17:19,461 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 56]	| name: dramaqa_sq
+2024-03-20 15:17:19,461 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 58]	| dataset_config: {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': ['AnotherMissOh/AnotherMissOhQA_train_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_train_set.json']}, 'val': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'test': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'ans2label': {'url': 'AnotherMissOh/ans2label.json', 'storage': 'AnotherMissOh/ans2label.json'}}, 'videos': {'storage': 'AnotherMissOh/images/'}}, 'vis_processor': {'train': {'name': 'blip2_image_train', 'image_size': 224}, 'eval': {'name': 'blip_image_eval', 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question'}, 'eval': {'name': 'blip_question'}}}
+2024-03-20 15:17:19,463 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py: 57]	| Building datasets...
+2024-03-20 15:17:19,464 [   INFO]in [               build() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py:186]	| prompt_type: None
+2024-03-20 15:21:56,249 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:175]	| 
+=====  Running Parameters    =====
+2024-03-20 15:21:56,249 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:176]	| {
+    "accum_grad_iters": 16,
+    "amp": true,
+    "batch_size_eval": 1,
+    "batch_size_train": 8,
+    "device": "cuda",
+    "dist_backend": "nccl",
+    "dist_url": "env://",
+    "distributed": true,
+    "evaluate": false,
+    "full_evaluation": true,
+    "gpu": 0,
+    "init_lr": 1e-05,
+    "lr_sched": "linear_warmup_cosine_lr",
+    "main_answer_inference": "perplexity",
+    "max_epoch": 10,
+    "max_len": 128,
+    "min_len": 1,
+    "min_lr": 0,
+    "num_beams": 5,
+    "num_workers": 0,
+    "output_dir": "z_output_ckpt/",
+    "prompt": "{}",
+    "rank": 0,
+    "resume_ckpt_path": null,
+    "seed": 20231120,
+    "task": "dramaqa_sq_task",
+    "test_splits": [
+        "test"
+    ],
+    "train_splits": [
+        "train"
+    ],
+    "valid_splits": [
+        "val"
+    ],
+    "warmup_lr": 1e-08,
+    "warmup_steps": 16000,
+    "weight_decay": 0.05,
+    "world_size": 4
+}
+2024-03-20 15:21:56,250 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:178]	| 
+======  Dataset Attributes  ======
+2024-03-20 15:21:56,250 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:183]	| 
+======== dramaqa_sq =======
+2024-03-20 15:21:56,250 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:185]	| {
+    "build_info": {
+        "annotations": {
+            "ans2label": {
+                "storage": "AnotherMissOh/ans2label.json",
+                "url": "AnotherMissOh/ans2label.json"
+            },
+            "test": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            },
+            "train": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_train_set.json"
+                ]
+            },
+            "val": {
+                "storage": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ],
+                "url": [
+                    "AnotherMissOh/AnotherMissOhQA_val_set.json"
+                ]
+            }
+        },
+        "videos": {
+            "storage": "AnotherMissOh/images/"
+        }
+    },
+    "data_type": "videos",
+    "text_processor": {
+        "eval": {
+            "name": "blip_question"
+        },
+        "train": {
+            "name": "blip_question"
+        }
+    },
+    "vis_processor": {
+        "eval": {
+            "image_size": 224,
+            "name": "blip_image_eval"
+        },
+        "train": {
+            "image_size": 224,
+            "name": "blip2_image_train"
+        }
+    }
+}
+2024-03-20 15:21:56,250 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:189]	| 
+======  Model Attributes  ======
+2024-03-20 15:21:56,250 [   INFO]in [        pretty_print() in /home/ywjang/simplesnulavis/lavis/common/config.py:190]	| {
+    "arch": "blip2_vicuna_instruct_sq",
+    "drop_path_rate": 0,
+    "finetuned": "/home/ywjang/simplesnulavis/lavis/z_output_ckpt/20231207111/checkpoint_63.pth",
+    "freeze_vit": true,
+    "image_size": 224,
+    "llm_model": "/home/ywjang/models/lmsys/vicuna-7b-v1.1",
+    "load_finetuned": true,
+    "load_pretrained": true,
+    "model_type": "vicuna7b",
+    "num_query_token": 32,
+    "num_sub_questions": 2,
+    "prompt": "blip2_instruct_vicuna7b.yaml Prompt. Q: {} A:",
+    "return_sub_qa": true,
+    "use_grad_checkpoint": true,
+    "vit_precision": "fp16"
+}
+2024-03-20 15:21:56,251 [   INFO]in [          setup_task() in     /home/ywjang/simplesnulavis/lavis/tasks/vqa.py:397]	| [91min setup_task(), prompt: {}[0m
+2024-03-20 15:21:56,251 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 56]	| name: dramaqa_sq
+2024-03-20 15:21:56,251 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/tasks/base_task.py: 58]	| dataset_config: {'data_type': 'videos', 'build_info': {'annotations': {'train': {'url': ['AnotherMissOh/AnotherMissOhQA_train_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_train_set.json']}, 'val': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'test': {'url': ['AnotherMissOh/AnotherMissOhQA_val_set.json'], 'storage': ['AnotherMissOh/AnotherMissOhQA_val_set.json']}, 'ans2label': {'url': 'AnotherMissOh/ans2label.json', 'storage': 'AnotherMissOh/ans2label.json'}}, 'videos': {'storage': 'AnotherMissOh/images/'}}, 'vis_processor': {'train': {'name': 'blip2_image_train', 'image_size': 224}, 'eval': {'name': 'blip_image_eval', 'image_size': 224}}, 'text_processor': {'train': {'name': 'blip_question'}, 'eval': {'name': 'blip_question'}}}
+2024-03-20 15:21:56,252 [   INFO]in [      build_datasets() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py: 57]	| Building datasets...
+2024-03-20 15:21:56,253 [   INFO]in [               build() in /home/ywjang/simplesnulavis/lavis/datasets/builders/base_dataset_builder.py:186]	| prompt_type: None
